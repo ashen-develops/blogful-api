@@ -9,7 +9,6 @@
     "start": "node src/server.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku master"
-    
   },
   "repository": {
     "type": "git",
@@ -33,6 +32,7 @@
     "chai": "^4.2.0",
     "mocha": "^8.2.0",
     "nodemon": "^2.0.6",
+    "postgrator-cli": "^3.2.0",
     "supertest": "^5.0.0"
   }
 }
