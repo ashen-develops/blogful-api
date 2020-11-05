@@ -1,6 +1,12 @@
+const knex = require('knex');
 const app = require('./app');
 
-const { PORT } = require('./config');
+const { PORT, DB_URL } = require('./config');
+
+const db = knex({
+  clent: 'pg',
+  connection: DB_URL,
+});
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
